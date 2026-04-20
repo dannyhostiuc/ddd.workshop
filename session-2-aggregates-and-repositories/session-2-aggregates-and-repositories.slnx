@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/LibraryLending.AggregatesAndRepositories.Api/LibraryLending.AggregatesAndRepositories.Api.csproj" />
+    <Project Path="src/LibraryLending.AggregatesAndRepositories.Domain/LibraryLending.AggregatesAndRepositories.Domain.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/LibraryLending.AggregatesAndRepositories.Domain.Tests/LibraryLending.AggregatesAndRepositories.Domain.Tests.csproj" />
+  </Folder>
+</Solution>

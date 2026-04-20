@@ -1,0 +1,42 @@
+@host = http://localhost:5000
+
+###
+GET {{host}}/
+
+### Healthy member, available copy, no reservations
+POST {{host}}/eligibility-checks
+Content-Type: application/json
+
+{
+  "member": {
+    "id": "11111111-1111-1111-1111-111111111111",
+    "activeLoanCount": 1,
+    "outstandingFinesEur": 0,
+    "isSuspended": false
+  },
+  "copy": {
+    "id": "22222222-2222-2222-2222-222222222222",
+    "isOnLoan": false
+  },
+  "reservations": [],
+  "today": "2026-04-20"
+}
+
+### Member with too many loans + unpaid fines + copy on loan → multiple reasons
+POST {{host}}/eligibility-checks
+Content-Type: application/json
+
+{
+  "member": {
+    "id": "11111111-1111-1111-1111-111111111111",
+    "activeLoanCount": 5,
+    "outstandingFinesEur": 25.0,
+    "isSuspended": true
+  },
+  "copy": {
+    "id": "22222222-2222-2222-2222-222222222222",
+    "isOnLoan": true
+  },
+  "reservations": [],
+  "today": "2026-04-20"
+}

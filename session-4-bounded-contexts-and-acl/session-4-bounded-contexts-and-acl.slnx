@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/LibraryLending.BoundedContexts.Api/LibraryLending.BoundedContexts.Api.csproj" />
+    <Project Path="src/LibraryLending.BoundedContexts.Domain/LibraryLending.BoundedContexts.Domain.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/LibraryLending.BoundedContexts.Domain.Tests/LibraryLending.BoundedContexts.Domain.Tests.csproj" />
+  </Folder>
+</Solution>
