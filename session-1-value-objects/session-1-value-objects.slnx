@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/LibraryLending.ValueObjects.Api/LibraryLending.ValueObjects.Api.csproj" />
+    <Project Path="src/LibraryLending.ValueObjects.Domain/LibraryLending.ValueObjects.Domain.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/LibraryLending.ValueObjects.Domain.Tests/LibraryLending.ValueObjects.Domain.Tests.csproj" />
+  </Folder>
+</Solution>
